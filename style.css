@@ -1,3 +1,28 @@
 body {
-  color: blue
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Ana başlık tasarımı */
+h1 {
+    color: #0056b3;
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+/* Paragraf tasarımı */
+p {
+    font-size: 1.2rem;
+    color: #555;
+    text-align: center;
+    max-width: 600px;
+    line-height: 1.6;
 }
