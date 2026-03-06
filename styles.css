@@ -1,28 +1,97 @@
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f4f4f9;
-    color: #333;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-}
 
-/* Ana başlık tasarımı */
-h1 {
-    color: #0056b3;
-    font-size: 3rem;
+h1, h2, p, a {
     margin-bottom: 10px;
 }
 
-/* Paragraf tasarımı */
-p {
-    font-size: 1.2rem;
-    color: #555;
+
+body {
+   
+    background-color: #f9f9f9;
+}
+
+
+nav {
+    color: whitesmoke;
+    background-color: #333;
     text-align: center;
-    max-width: 600px;
+}
+
+
+
+
+nav ul li {
+    
+    display: inline-block; 
+}
+
+nav ul li a {
+    display: inline-block;
+    padding: 15px 25px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+nav ul li a:hover {
+    background-color: #555;
+    color: #00ffdd; 
+}
+
+
+header {
+    color: whitesmoke;
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #555a73;
+    border-bottom: 2px solid #ccc;
+}
+
+.container {
+    text-align: center; 
+    padding: 30px 0;
+}
+
+.content, .sidebar {
+    
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box; 
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: left; 
+}
+
+.content {
+    width: 55%;
+    margin-right: 2%;
+}
+
+.sidebar {
+    width: 35%;
+}
+
+
+.content p {
+    font-size: 16px;
+    color: #653a3a;
     line-height: 1.6;
+    text-align: justify;
+}
+
+.sidebar p {
+    font-size: 14px;
+    color: #666666;
+    line-height: 1.6;
+    text-align: left;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 20px;
 }
