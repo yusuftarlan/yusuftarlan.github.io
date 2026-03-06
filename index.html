@@ -1,12 +1,45 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="tr">
-    <link rel="stylesheet" href="styles.css">
-<head>
-    <meta charset="UTF-8">
-    <title>Benim Web Sitem</title>
-</head>
-<body>
-    <h1>Merhaba Dünya!</h1>
-    <p>Merhaba</p>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>HTML ve CSS Temelleri Ödevi</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li><a>Ana Sayfa</a></li>
+                <li><a>Hakkımızda</a></li>
+                <li><a>Hizmetler</a></li>
+                <li><a>İletişim</a></li>
+            </ul>
+        </nav>
+
+        <header>
+            <h1>Yusuf Tarlan</h1>
+            <p>Bu sayfa, HTML5 etiketleri ve CSS3 özellikleri kullanılarak hazırlanmıştır.</p>
+        </header>
+
+        <main class="container">
+            <section class="content">
+                <h2>İçerik</h2>
+                <p>
+                    Burası sol tarafta yer alan ana içerik alanıdır. Web sayfalarının gövdesini oluştururken semantik etiketler kullanmak arama motorları için
+                    oldukça önemlidir.
+                </p>
+                <p>Bu kutu, CSS'teki display: inline-block özelliği sayesinde yan menü ile yan yana durmaktadır.</p>
+            </section>
+
+            <aside class="sidebar">
+                <h2>Yan Menü/Bilgi</h2>
+                <p>Burası sağ tarafta yer alan yan bilgi alanıdır. Genellikle duyurular, hızlı bağlantılar veya kısa notlar için kullanılır.</p>
+                <p>Buradaki metinler, ana içerikten farklıdır.</p>
+            </aside>
+        </main>
+
+        <footer>
+            <p>Telif Hakkı 2026 - Tüm Hakları Saklıdır.</p>
+        </footer>
+    </body>
 </html>
