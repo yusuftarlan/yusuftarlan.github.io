@@ -102,41 +102,39 @@ header {
     background-color: #f9f9f9;
     
 }
-
-/* 2. Label Etiketleri */
 label {
     display: block;
     margin-bottom: 8px;
     font-weight: bold;
 }
 
-/* 3. Form Elemanlarına Genel Müdahale */
+
 input[type="text"],
 input[type="email"],
 select,
 textarea {
-    width: 100%;            /* Alanın tamamını kaplar */
-    padding: 12px;          /* Yazı yazarken ferah durması için iç boşluk */
-    margin-bottom: 20px;    /* Alt elemanla aradaki boşluk */
+    width: 100%;            
+    padding: 12px;          
+    margin-bottom: 20px;    
     border: 1px solid #ccc;
     border-radius: 4px;
     font-size: 14px;
 }
 
-/* 4. Gönder Butonu Tasarımı */
+
 .submit-btn {
-    background-color: #4CAF50; /* Yeşil arka plan */
+    background-color: #4CAF50; 
     color: white;
-    border: none;              /* Kenarlığı kaldırır */
-    padding: 12px 30px;        /* Üst-alt ve sağ-sol padding */
+    border: none;              
+    padding: 12px 30px;        
     font-size: 16px;
     border-radius: 6px;
-    cursor: pointer;           /* Üzerine gelince el ikonu */
+    cursor: pointer;          
     transition: background-color 0.3s;
 }
 
 .submit-btn:hover {
-    background-color: #45a049; /* Hover efekti */
+    background-color: #45a049; 
 }
 
 footer {
