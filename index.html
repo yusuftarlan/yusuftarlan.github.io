@@ -39,14 +39,47 @@
         </main>
 
         <div class="contact-container">
+            <h2 style="text-align: center">Detaylı İletişim Formu</h2>
+
             <form action="#">
-                <label for="name">Ad Soyad</label>
-                <input type="text" id="name" name="name" placeholder="Adınızı ve soyadınızı giriniz..." required />
+                <label for="name">Ad Soyad:</label>
+                <input type="text" id="name" name="name" placeholder="Örn: Asaf Karataş" required />
 
-                <label for="email">E-posta</label>
-                <input type="email" id="email" name="email" placeholder="E-posta adresinizi giriniz..." required />
+                <label for="email">E-posta Adresi:</label>
+                <input type="email" id="email" name="email" placeholder="ornek@mail.com" required />
 
-                <label for="subject">Konu</label>
+                <label for="tracking-password">Başvuru Takip Şifresi:</label>
+                <input type="password" id="tracking-password" name="tracking-password" placeholder="Şifrenizi girin" required />
+
+                <label>İletişim Tercihi:</label>
+                <div class="preference-group" style="background-color: #fafafa; padding: 15px; border-radius: 5px; margin-bottom: 15px">
+                    <div>
+                        <input type="radio" id="pref-email" name="contact_pref" value="email" checked />
+                        <label for="pref-email" style="display: inline">Bana e-posta ile ulaşın</label>
+                    </div>
+                    <div style="margin-top: 5px">
+                        <input type="radio" id="pref-phone" name="contact_pref" value="phone" />
+                        <label for="pref-phone" style="display: inline">Bana telefonla ulaşın</label>
+                    </div>
+                </div>
+
+                <label>İlgi Alanları / Yetenekler:</label>
+                <div class="skills-group" style="background-color: #fafafa; padding: 15px; border-radius: 5px; margin-bottom: 15px">
+                    <div>
+                        <input type="checkbox" id="skill-html" name="skills" value="HTML" />
+                        <label for="skill-html" style="display: inline">HTML</label>
+                    </div>
+                    <div style="margin-top: 5px">
+                        <input type="checkbox" id="skill-css" name="skills" value="CSS" />
+                        <label for="skill-css" style="display: inline">CSS</label>
+                    </div>
+                    <div style="margin-top: 5px">
+                        <input type="checkbox" id="skill-algo" name="skills" value="Algoritma" />
+                        <label for="skill-algo" style="display: inline">Algoritma</label>
+                    </div>
+                </div>
+
+                <label for="subject">Konu:</label>
                 <select id="subject" name="subject">
                     <option value="job-offer">İş Teklifi</option>
                     <option value="question">Soru</option>

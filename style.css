@@ -1,14 +1,18 @@
+/* Genel Sıfırlama ve Kutu Modeli (Taşmaları önlemek için çok önemli) */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif; /* Daha temiz bir görünüm için eklendi */
+}
 
 h1, h2, p, a {
     margin-bottom: 10px;
 }
-
-
-body {
-   
-    background-color: #f9f9f9;
-}
-
 
 nav {
     color: whitesmoke;
@@ -16,11 +20,11 @@ nav {
     text-align: center;
 }
 
-
-
+nav ul {
+    list-style-type: none; /* Noktaları kaldırır */
+}
 
 nav ul li {
-    
     display: inline-block; 
 }
 
@@ -32,12 +36,10 @@ nav ul li a {
     font-weight: bold;
 }
 
-
 nav ul li a:hover {
     background-color: #555;
     color: #00ffdd; 
 }
-
 
 header {
     color: whitesmoke;
@@ -53,10 +55,8 @@ header {
 }
 
 .content, .sidebar {
-    
     display: inline-block;
     vertical-align: top;
-    box-sizing: border-box; 
     padding: 20px;
     background-color: white;
     border: 1px solid #ddd;
@@ -73,7 +73,6 @@ header {
     width: 35%;
 }
 
-
 .content p {
     font-size: 16px;
     color: #653a3a;
@@ -88,36 +87,44 @@ header {
     text-align: left;
 }
 
-
-
 .contact-container {
-    width: 600px;           
+    max-width: 600px; /* Sabit width yerine esnek yapı */
+    width: 90%;         
     margin: 50px auto;      
     padding: 30px;          
     border: 2px solid #ddd; 
     border-radius: 12px;   
-    background-color: #f9f9f9;
-    
+    background-color: #ffffff;
 }
+
 label {
     display: block;
     margin-bottom: 8px;
+    margin-top: 15px; /* Form elemanlarının birbirine yapışmasını engeller */
     font-weight: bold;
 }
 
-
+/* Şifre alanı (password) eklendi */
 input[type="text"],
 input[type="email"],
+input[type="password"],
 select,
 textarea {
     width: 100%;            
     padding: 12px;          
-    margin-bottom: 20px;    
+    margin-bottom: 10px;    
     border: 1px solid #ccc;
     border-radius: 4px;
     font-size: 14px;
+    font-family: inherit;
 }
 
+/* Radyo butonları ve onay kutularının ayarları */
+input[type="radio"],
+input[type="checkbox"] {
+    width: auto;
+    margin-right: 8px;
+}
 
 .submit-btn {
     background-color: #4CAF50; 
@@ -128,6 +135,8 @@ textarea {
     border-radius: 6px;
     cursor: pointer;          
     transition: background-color 0.3s;
+    display: block;
+    margin: 20px auto 0; /* Butonu ortalamak için */
 }
 
 .submit-btn:hover {
