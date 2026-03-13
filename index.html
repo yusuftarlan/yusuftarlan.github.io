@@ -38,6 +38,27 @@
             </aside>
         </main>
 
+        <div class="contact-container">
+            <form action="#">
+                <label for="name">Ad Soyad</label>
+                <input type="text" id="name" name="name" placeholder="Adınızı ve soyadınızı giriniz..." required />
+
+                <label for="email">E-posta</label>
+                <input type="email" id="email" name="email" placeholder="E-posta adresinizi giriniz..." required />
+
+                <label for="subject">Konu</label>
+                <select id="subject" name="subject">
+                    <option value="job-offer">İş Teklifi</option>
+                    <option value="question">Soru</option>
+                    <option value="feedback">Geri Bildirim</option>
+                </select>
+
+                <label for="message">Mesaj</label>
+                <textarea id="message" name="message" placeholder="Mesajınızı buraya yazınız..." rows="5"></textarea>
+
+                <button type="submit" class="submit-btn">Gönder</button>
+            </form>
+        </div>
         <footer>
             <p>Telif Hakkı 2026 - Tüm Hakları Saklıdır.</p>
         </footer>
