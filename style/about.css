@@ -1,0 +1,12 @@
+ul {
+  display: flex; /* İçindeki tüm li öğelerini otomatik olarak yan yana dizer */
+  
+  padding: 0;
+  margin: 0;
+}
+
+li a {
+  display: inline-block; /* Sadece yazıyı değil, tüm kutuyu tıklanabilir hale getirir */
+  padding: 15px 20px; /* İç boşluk vererek buton görünümü sağlar */
+  text-decoration: none; /* Linklerin alt çizgisini kaldırır */
+}
