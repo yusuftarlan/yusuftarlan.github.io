@@ -1,12 +1,12 @@
-.grade_calculator_area input,
-.grade_calculator_area button {
+.grade-box input,
+.grade-box button {
     display: block;
     margin-bottom: 10px;
     width: 100%;
     box-sizing: border-box;
 }
 
-.grade_calculator_area {
+.grade-box {
     padding: 5px;
     background-color: rgb(239, 239, 239);
     display: block;

@@ -87,7 +87,7 @@ header {
     text-align: left;
 }
 
-.contact-container {
+.contact-box {
     max-width: 600px; 
     width: 90%;         
     margin: 50px auto;      
@@ -126,7 +126,21 @@ input[type="checkbox"] {
     margin-right: 8px;
 }
 
-.submit-btn {
+.file-box {
+    margin-bottom: 15px;
+}
+
+.file-box input {
+    display: block;
+}
+
+.form-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.send-button {
     background-color: #4CAF50; 
     color: white;
     border: none;              
@@ -135,12 +149,22 @@ input[type="checkbox"] {
     border-radius: 6px;
     cursor: pointer;          
     transition: background-color 0.3s;
-    display: block;
-    margin: 20px auto 0; 
+    flex: 1;
 }
 
-.submit-btn:hover {
+.send-button:hover {
     background-color: #45a049; 
+}
+
+.clear-button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    flex: 1;
 }
 
 footer {
@@ -149,4 +173,180 @@ footer {
     text-align: center;
     padding: 15px 0;
     margin-top: 20px;
+}
+
+.lesson-page {
+    background-color: #f2f2f5;
+    color: #333;
+}
+
+.lesson-page a,
+.lesson-page h1,
+.lesson-page h2,
+.lesson-page h3,
+.lesson-page p {
+    margin-bottom: 0;
+}
+
+.page {
+    width: 90vw;
+    max-width: 1100px;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.top-menu {
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    color: #333;
+}
+
+.logo {
+    font-weight: bold;
+}
+
+.menu-links {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+}
+
+.menu-links a {
+    color: #333;
+    text-decoration: none;
+}
+
+.hero {
+    height: 30vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 24px;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.hero-text,
+.hero-image {
+    flex: 1;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.hero-text button,
+.card button {
+    border: none;
+    border-radius: 6px;
+    padding: 10px 22px;
+    background-color: #4f8ee8;
+    color: white;
+    cursor: pointer;
+}
+
+.hero-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eceef3;
+    border: 1px solid #d8dbe3;
+    border-radius: 8px;
+    color: #777;
+}
+
+.card-section {
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    gap: 12px;
+    padding: 16px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.card {
+    min-width: 140px;
+    flex: 1 1 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 14px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f8f9fb;
+}
+
+.grow-area {
+    height: 20vh;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    gap: 12px;
+    padding: 16px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.grow-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+}
+
+.grow-one {
+    flex-grow: 1;
+    background-color: #dff0ff;
+}
+
+.grow-two {
+    flex-grow: 2;
+    background-color: #e4f5d7;
+}
+
+.grow-three {
+    flex-grow: 1;
+    background-color: #ffe9cf;
+}
+
+.page-footer {
+    height: 10vh;
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    color: #333;
 }

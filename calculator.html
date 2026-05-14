@@ -1,27 +1,26 @@
 <!doctype html>
-<html lang="en">
+<html lang="tr">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Document</title>
-        <link rel="stylesheet" href="calculator.css" />
+        <link rel="stylesheet" href="/style/calculator.css" />
     </head>
     <body>
-       
-        <div class="grade_calculator_area">
-             <h1>Öğrenci Not Hesaplama</h1>
-                <form id="gradeForm" class="grade_calculator_area">
-                    <input type="text" id="student_name" name="student_name" placeholder="Ad Soyad" required />
-                    <input type="text" id="midterm" name="midterm" placeholder="Vize Notu" required />
-                    <input type="text" id="final" name="final" placeholder="Final Notu" required />
-                    <button type="submit">Hesapla</button>
-                </form>
-                <div id="result" style="margin-top:20px; background-color: rgb(208, 224, 225);"></div>
+        <div class="grade-box">
+            <h1>Öğrenci Not Hesaplama</h1>
+            <form id="gradeForm" class="grade-box">
+                <input type="text" id="student_name" name="student_name" placeholder="Ad Soyad" required />
+                <input type="text" id="midterm" name="midterm" placeholder="Vize Notu" required />
+                <input type="text" id="final" name="final" placeholder="Final Notu" required />
+                <button type="submit">Hesapla</button>
+            </form>
+            <div id="result" style="margin-top:20px; background-color: rgb(208, 224, 225);"></div>
         </div>
 
-        <div class="unit_converter_area" style="max-width: 350px; margin: 40px auto; padding: 20px; background: #f7f7f7; border-radius: 8px;">
+        <div class="unit-box" style="max-width: 350px; margin: 40px auto; padding: 20px; background: #f7f7f7; border-radius: 8px;">
             <h2>Birim Dönüştürücü</h2>
-            
+
             <div id="unit-inputs">
                 <input type="number" id="unit_value" placeholder="Değer" style="width:100%; margin-bottom:10px;" />
                 <select id="from_unit" style="width:100%; margin-bottom:10px;">
@@ -29,12 +28,11 @@
                     <option value="2">Celcius -> Fahrenheit </option>
                     <option value="3">Kilogram -> Gram </option>
                 </select>
-            
+
                 <button id="convertBtn" style="width:100%;">Dönüştür</button>
             </div>
             <div id="convert_result" style="margin-top:15px;"></div>
         </div>
-    </body>
         <script>
             document.getElementById('gradeForm').addEventListener('submit', function(e) {
                 e.preventDefault();
@@ -61,33 +59,28 @@
                 resultDiv.innerHTML = `<strong>${name}</strong><br>Ortalama: ${average.toFixed(2)}<br>Harf Notu: ${letter}<br>Durum: ${status}`;
             });
 
-           
-       
-        document.getElementById('convertBtn').addEventListener('click', function(e) {
-            e.preventDefault();
-            const value = parseFloat(document.getElementById('unit_value').value);
-            const fromUnit = document.getElementById('from_unit').value;
-            let result = '';
-            if (isNaN(value)) {
-                document.getElementById('convert_result').innerHTML = '<span style="color:red">Lütfen bir değer girin.</span>';
-                return;
-            }
-            if (fromUnit === '1') {
-               
-                result = value / 1000;
-                document.getElementById('convert_result').innerHTML = `<strong>Sonuç:</strong> ${result} km`;
-            } else if (fromUnit === '2') {
-                
-                result = value * 9/5 + 32;
-                document.getElementById('convert_result').innerHTML = `<strong>Sonuç:</strong> ${result} °F`;
-            } else if (fromUnit === '3') {
-               
-                result = value * 1000;
-                document.getElementById('convert_result').innerHTML = `<strong>Sonuç:</strong> ${result} g`;
-            } else {
-                document.getElementById('convert_result').innerHTML = '<span style="color:red">Dönüşüm yapılamadı.</span>';
-            }
-        });
+            document.getElementById('convertBtn').addEventListener('click', function(e) {
+                e.preventDefault();
+                const value = parseFloat(document.getElementById('unit_value').value);
+                const fromUnit = document.getElementById('from_unit').value;
+                let result = '';
+                if (isNaN(value)) {
+                    document.getElementById('convert_result').innerHTML = '<span style="color:red">Lütfen bir değer girin.</span>';
+                    return;
+                }
+                if (fromUnit === '1') {
+                    result = value / 1000;
+                    document.getElementById('convert_result').innerHTML = `<strong>Sonuç:</strong> ${result} km`;
+                } else if (fromUnit === '2') {
+                    result = value * 9/5 + 32;
+                    document.getElementById('convert_result').innerHTML = `<strong>Sonuç:</strong> ${result} °F`;
+                } else if (fromUnit === '3') {
+                    result = value * 1000;
+                    document.getElementById('convert_result').innerHTML = `<strong>Sonuç:</strong> ${result} g`;
+                } else {
+                    document.getElementById('convert_result').innerHTML = '<span style="color:red">Dönüşüm yapılamadı.</span>';
+                }
+            });
         </script>
-        </body>
-    </html>
+    </body>
+</html>
